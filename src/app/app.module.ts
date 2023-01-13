@@ -31,6 +31,7 @@ import { BannerComponent } from './components/banner/banner.component';
 import { AuthComponent } from './pages/auth/auth.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
+import { MintingComponent } from './pages/minting/minting.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +42,8 @@ import { RegisterComponent } from './components/register/register.component';
     BannerComponent,
     AuthComponent,
     LoginComponent,
-    RegisterComponent
+    RegisterComponent,
+    MintingComponent
   ],
   imports: [
     BrowserModule,
