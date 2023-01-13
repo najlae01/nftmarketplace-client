@@ -1,0 +1,57 @@
+.banner-header{
+    font-family: 'Robot';
+    font-size: 50px;
+    font-weight: 300;
+    margin-top: 36px;
+    letter-spacing: 3px;
+    color: #ded0de;
+}
+
+.banner-header span{
+    background: linear-gradient(45deg, #2D143B,
+        rgb(123, 1, 236),
+        #642e5de0,
+        #581D4B,
+        #2D143B);
+    -webkit-text-stroke-width: 0.4px;
+    -webkit-text-stroke-color: #ded0de;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+:host ::ng-deep .mycard.p-card {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+.banner-middle {
+    font-family: 'Gameplay';
+    font-size: 14px;
+    font-weight: 50;
+    margin-top: 16px;
+    letter-spacing: 3px;
+    color: #ded0de;
+}
+
+:host ::ng-deep .mybutton.p-button{
+    display: flex;
+    color: #ded0de;
+    font-family: 'Game';
+    font-size: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: linear-gradient(90deg, #2D143B, transparent) rgb(123, 1, 236);
+    border: none;
+    transition: background-color 1s;
+    place-content: center;
+    box-shadow: 1px 2px 10px 2px rgb(106, 0, 204);
+}
+:host ::ng-deep .mybutton.p-button:hover {
+    background: linear-gradient(90deg,
+            rgb(123, 1, 236),
+            transparent) #581D4B;
+}

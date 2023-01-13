@@ -1,0 +1,30 @@
+<div >
+    <p-splitter [style]="{'height': '300px'}" styleClass="mb-5">
+        <ng-template pTemplate>
+            <div class="left">
+                <span class="lozenge">K</span>
+                <p class="rest-of-label">amu</p>
+            </div>
+        </ng-template>
+        <ng-template pTemplate>
+            <div class="right">
+                <div class="card">
+                    <p-tabView styleClass="tabview-custom">
+                        <p-tabPanel header="Header I">
+                            <ng-template pTemplate="header">
+                                <span>LOGIN</span>
+                            </ng-template>
+                            <app-login></app-login>
+                        </p-tabPanel>
+                        <p-tabPanel header="Header II">
+                            <ng-template pTemplate="header">
+                                <span>SIGN UP</span>
+                            </ng-template>
+                            <app-register></app-register>
+                        </p-tabPanel>
+                    </p-tabView>
+                </div>
+            </div>
+        </ng-template>
+    </p-splitter>
+</div>

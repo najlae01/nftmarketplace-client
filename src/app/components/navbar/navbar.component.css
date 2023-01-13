@@ -1,0 +1,46 @@
+:host ::ng-deep .dark-panel.p-toolbar {
+        background: transparent;
+        border: none;
+}
+
+:host ::ng-deep .dark-menu.p-menubar {
+    background: transparent;
+    border: none;
+    font-family: 'Robot';
+    letter-spacing: 2px;
+    font-size: 20px;
+    outline: none;
+}
+
+.lozenge {
+    height: 50px;
+    width: 50px;
+    line-height: 40px;
+    border-radius: 40%;
+    background: linear-gradient(135deg, #461944 20%, #2D143B);
+    text-align: end;
+    padding-right: 8px;
+    margin-right: 1px;
+    font-family: Sketcomic;
+    font-size: 40px;
+    font-weight: 400;
+    color: #ded0de;
+}
+
+.rest-of-label {
+    font-family: 'Robot';
+    text-transform: lowercase;
+    font-size: 30px;
+    font-weight: 400;
+    color: #ded0de;
+}
+
+:host ::ng-deep .p-menubar .p-menubar-root-list>.p-menuitem>.p-menuitem-link .p-menuitem-text:hover {
+    color: rgb(123, 1, 236);
+    text-shadow: rgb(106, 0, 204) 2px 2px 20px ;
+}
+
+
+:host ::ng-deep .p-menubar .p-menubar-root-list>.p-menuitem>.p-menuitem-link:focus {
+    box-shadow: none;
+}
