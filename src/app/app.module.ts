@@ -18,6 +18,9 @@ import {MenubarModule} from 'primeng/menubar';
 import {CardModule} from 'primeng/card';
 import {SplitterModule} from 'primeng/splitter';
 import {TabViewModule} from 'primeng/tabview';
+import {InputTextModule} from 'primeng/inputtext';
+import {ToastModule} from 'primeng/toast';
+import {RippleModule} from 'primeng/ripple';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -58,6 +61,9 @@ import { RegisterComponent } from './components/register/register.component';
     CardModule,
     SplitterModule,
     TabViewModule,
+    InputTextModule,
+    ToastModule,
+    RippleModule,
 
       TuiRootModule,
       TuiDialogModule,

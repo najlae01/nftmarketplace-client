@@ -44,3 +44,43 @@
 :host ::ng-deep .p-menubar .p-menubar-root-list>.p-menuitem>.p-menuitem-link:focus {
     box-shadow: none;
 }
+
+:host ::ng-deep .p-menubar .p-menubar-root-list>.p-menuitem>.p-menuitem-link .p-menuitem-icon {
+    font-size: 1.6rem !important;
+}
+
+:host ::ng-deep .p-menubar .p-menubar-root-list>.p-menuitem>.p-menuitem-link .p-menuitem-icon:hover {
+    color: rgb(123, 1, 236) !important;
+    text-shadow: rgb(106, 0, 204) 2px 2px 20px !important;
+}
+
+:host ::ng-deep .p-inputtext {
+    width: 20rem;
+    height: 2.7rem;
+    border-radius: 10px;
+    background-color: #ded0de;
+    color: #2D143B;
+}
+
+:host ::ng-deep .p-inputtext::placeholder {
+    color: #2D143B;
+    opacity: 0.7;
+}
+
+:host ::ng-deep i.pi-search {
+    color: #2D143B;
+    opacity: 0.6;
+}
+
+:host ::ng-deep .p-toast .p-toast-message .p-toast-message-content>.p-flex.p-flex-column> .p-text-center{
+
+}
+:host ::ng-deep .p-toast .p-toast-message .p-toast-message-content> .p-flex.p-flex-column >.p-grid.p-fluid{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+:host ::ng-deep .p-toast .p-toast-message .p-toast-message-content>.p-flex.p-flex-column>.p-grid.p-fluid > div {
+    width: 10rem !important;
+}
