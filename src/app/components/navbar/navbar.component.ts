@@ -59,7 +59,8 @@ connectToWallet  = () => {
 
   checkWalletConnected = async () => {
     this.accounts = await this.walletService.checkWalletConnected();
-    console.log(this.accounts.length)
+    if(this.walletService.notInstalled)
+      return;
     if(this.accounts.length > 0){
       this.walletConnected = true;
       this.walletId = this.accounts[0];

@@ -22,7 +22,7 @@ export class WalletService {
           this.accounts = await this.ethereum.request({method: 'eth_requestAccounts'});
   }
     catch(e){
-       throw new Error("No thereum object found")
+       throw new Error("No ethereum object found")
     }
   }
 
