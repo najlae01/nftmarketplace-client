@@ -32,6 +32,7 @@ import { AuthComponent } from './pages/auth/auth.component';
 import { LoginComponent } from './components/login/login.component';
 import { RegisterComponent } from './components/register/register.component';
 import { MintingComponent } from './pages/minting/minting.component';
+import { UserNftsComponent } from './pages/user-nfts/user-nfts.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { MintingComponent } from './pages/minting/minting.component';
     AuthComponent,
     LoginComponent,
     RegisterComponent,
-    MintingComponent
+    MintingComponent,
+    UserNftsComponent
   ],
   imports: [
     BrowserModule,

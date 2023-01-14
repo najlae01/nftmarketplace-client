@@ -28,6 +28,11 @@ constructor(private walletService: WalletService, private messageService: Messag
             label: 'MARKETPLACE'
         },
         {
+            label: 'MY NFTS',
+            routerLink: '/mynfts',
+            visible: true
+        },
+        {
             label: 'CONNECT',
             command: () => this.connectToWallet(),
             visible: true
@@ -73,14 +78,16 @@ connectToWallet  = () => {
   checkVisibility(){
     if(this.walletConnected ){
       this.walletConnected = true;
-      this.items[2].visible = false;
-      this.items[3].visible = true;
-      this.items[4].visible = true;
-      return true
-    }else{
       this.items[2].visible = true;
       this.items[3].visible = false;
+      this.items[4].visible = true;
+      this.items[5].visible = true;
+      return true
+    }else{
+      this.items[2].visible = false;
+      this.items[3].visible = true;
       this.items[4].visible = false;
+      this.items[5].visible = false;
       return true
     }
   }

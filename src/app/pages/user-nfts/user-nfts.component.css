@@ -1,0 +1,27 @@
+:host ::ng-deep .mybutton.p-button {
+    display: flex;
+    color: #ded0de;
+    font-family: 'Game';
+    font-size: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background:  rgb(123, 1, 236);
+    border: none;
+    transition: background-color 1s;
+    place-content: center;
+    box-shadow: 1px 2px 5px 2px rgb(106, 0, 204);
+}
+
+:host ::ng-deep .mybutton.p-button:hover {
+    background: linear-gradient(90deg,
+            rgb(123, 1, 236),
+            transparent) #581D4B;
+}
+
+:host ::ng-deep .mycard.p-card {
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    padding: 0;
+}
