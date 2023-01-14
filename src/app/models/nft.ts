@@ -5,5 +5,4 @@ export class NFT {
     'price': any;
     'description': any;
     'imageCover': any;
-    'images': any;
 }

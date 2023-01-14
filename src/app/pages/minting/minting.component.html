@@ -23,13 +23,9 @@
                     <textarea rows="5" cols="30" pInputTextarea [autoResize]="true" formControlName="description" name="description" placeholder="Tell us about your nft..."></textarea>
             </div>
             <div class="imageUpload-box">
-                <p-fileUpload name="demo[]" url="./upload.php" (onUpload)="onUpload($event)"  accept="image/*">
-                    <ng-template pTemplate="content">
-                        <ul *ngIf="uploadedFiles.length">
-                            <li *ngFor="let file of uploadedFiles">{{file.name}} - {{file.size}} bytes</li>
-                        </ul>
-                    </ng-template>
-                </p-fileUpload>
+                <input pInputText type="file" accept="image/*" maxFileSize="1000000"
+                    (change)="onUpload($event)"/>
+                
             </div>
             <input value="Mint now" class="mybutton" type="submit">
         </form>
