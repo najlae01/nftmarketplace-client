@@ -9,6 +9,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { ToastrModule } from 'ngx-toastr';
 
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+
 //import {MatToolbarModule} from '@angular/material/toolbar';
 //import {MatIconModule} from '@angular/material/icon';
 import {ToolbarModule} from 'primeng/toolbar';
@@ -21,6 +23,8 @@ import {TabViewModule} from 'primeng/tabview';
 import {InputTextModule} from 'primeng/inputtext';
 import {ToastModule} from 'primeng/toast';
 import {RippleModule} from 'primeng/ripple';
+import {InputTextareaModule} from 'primeng/inputtextarea';
+import {FileUploadModule} from 'primeng/fileupload';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -56,6 +60,7 @@ import { UserNftsComponent } from './pages/user-nfts/user-nfts.component';
     ToastrModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
+    FontAwesomeModule,
     //MatToolbarModule,
     //MatIconModule,
     ToolbarModule,
@@ -68,6 +73,8 @@ import { UserNftsComponent } from './pages/user-nfts/user-nfts.component';
     InputTextModule,
     ToastModule,
     RippleModule,
+    InputTextareaModule,
+    FileUploadModule,
 
       TuiRootModule,
       TuiDialogModule,

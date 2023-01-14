@@ -1,0 +1,111 @@
+<div class="container">
+    <p-splitter layout="vertical" >
+        <ng-template pTemplate>
+            <p-splitter styleClass="mb-5">
+                <ng-template pTemplate>
+                    <div class="col flex align-items-center justify-content-flex-start">
+                        <div class="header">NFT Gallery</div>
+                        <div class="info">
+                            <div class="phone">
+                                <a href="tel:+212 656899001">
+                                    <i class="pi pi-phone" style="line-height: 1.25; "></i>
+                                    +(212) 656899001
+                                </a>
+                            </div>
+                            <div class="mail">
+                                <a href="mailto:kamu.gp@gmail.com">
+                                    <i class="pi pi-envelope" style="line-height: 1.25;"></i>
+                                    kamu.gp@gmail.com
+                                </a>
+                            </div>
+                            <div class="address">
+                                <i class="pi pi-map-marker" style="line-height: 1.25;"></i>
+                                16637 Tangier, Morocco
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template pTemplate>
+                        <div class="col flex align-items-center justify-content-flex-start">
+                            <div class="header">Explore</div>
+                            <div class="info">
+                                <div class="item">
+                                    <a [routerLink]="['/']" >Store</a> 
+                                </div>
+                                <div class="item">
+                                    <a [routerLink]="['/']">Privacy Policy</a>
+                                </div>
+                                <div class="item">
+                                    <a [routerLink]="['/']">FAQs</a>
+                                </div>
+                            </div>
+                        </div>
+                </ng-template>
+                <ng-template pTemplate>
+                    <div class="col flex align-items-center justify-content-flex-start">
+                        <div class="header">Community</div>
+                        <div class="info">
+                            <div class="item">
+                                <a [routerLink]="['/']">Art</a>
+                            </div>
+                            <div class="item">
+                                <a [routerLink]="['/']">Digital Art</a>
+                            </div>
+                            <div class="item">
+                                <a [routerLink]="['/']">Photography</a>
+                            </div>
+                            <div class="item">
+                                <a [routerLink]="['/']">Games</a>
+                            </div>
+                            <div class="item">
+                                <a [routerLink]="['/']">Music</a>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+                <ng-template pTemplate >
+                    <div class="col flex align-items-center justify-content-flex-start">
+                        <div class="header">NewsLetter</div>
+                        <div class="info">
+                            <div class="subscribe" >
+                                <form>
+                                    <input type="email"  placeholder="Your email address.."/> 
+                                    <button type="submit" pButton pRipple icon="pi pi-arrow-right" styleClass="p-button-success"></button>
+
+                                </form>
+                            </div>
+                            <div class="social-media">
+                                <div class="icon">
+                                    <a href="https://www.facebook.com/" target="_blank">
+                                        <i class="pi pi-facebook" style="line-height: 1.25;"></i>
+                                    </a>
+                                </div>
+                                <div class="icon">
+                                    <a href="https://www.instagram.com/" target="_blank">
+                                        <i class="pi pi-instagram" style="line-height: 1.25;"></i>
+                                    </a>
+                                </div>
+                                <div class="icon">
+                                    <a href="https://www.twitter.com/" target="_blank">
+                                        <i class="pi pi-twitter" style="line-height: 1.25;"></i>
+                                    </a>
+                                </div>
+                                <div class="icon">
+                                    <a href="https://www.discord.com/" target="_blank">
+                                        <i class="pi pi-discord" style="line-height: 1.25;"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </p-splitter>
+        </ng-template>
+        <ng-template pTemplate>
+                <div class="copyright">
+                    &copy;Copyright 2023, Powered By <span>KamU</span>
+            </div>
+        </ng-template>
+    </p-splitter>
+    <hr/>
+</div>

@@ -52,6 +52,6 @@
 }
 :host ::ng-deep .mybutton.p-button:hover {
     background: linear-gradient(90deg,
-            rgb(123, 1, 236),
-            transparent) #581D4B;
+                rgb(123, 1, 236),
+                transparent) #8e4b7d;
 }

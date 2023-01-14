@@ -1,14 +1,42 @@
+<p-toast></p-toast>
 <app-navbar></app-navbar>
+
 <div class="container">
     <p-card styleClass="mycard">
         <ng-template pTemplate="header">
             <div class="form-header">MINT YOUR NFT</div>
         </ng-template>
-        <div class="form-middle">
-            
-        </div>
+        <form class="form-middle" (ngSubmit)="insertData()" [formGroup]="form">
+            <div class="p-col-12 p-md-4">
+                <div class="p-inputgroup">
+                    <span class="p-inputgroup-addon"><fa-icon [icon]="paletteIcon"></fa-icon></span>
+                    <input type="text" pInputText placeholder="Name" formControlName="name" name="name">
+                </div>
+            </div>
+            <div class="p-col-12 p-md-4">
+                    <div class="p-inputgroup">
+                        <span class="p-inputgroup-addon"><i class="pi pi-tags" style="line-height: 1.25;"></i></span>
+                        <input type="text" pInputText placeholder="Price" formControlName="price" name="price">
+                    </div>
+            </div>
+            <div class="description-box">
+                    <textarea rows="5" cols="30" pInputTextarea [autoResize]="true" formControlName="description" name="description" placeholder="Tell us about your nft..."></textarea>
+            </div>
+            <div class="imageUpload-box">
+                <p-fileUpload name="demo[]" url="./upload.php" (onUpload)="onUpload($event)"  accept="image/*">
+                    <ng-template pTemplate="content">
+                        <ul *ngIf="uploadedFiles.length">
+                            <li *ngFor="let file of uploadedFiles">{{file.name}} - {{file.size}} bytes</li>
+                        </ul>
+                    </ng-template>
+                </p-fileUpload>
+            </div>
+            <input value="Mint now" class="mybutton" type="submit">
+        </form>
         <ng-template pTemplate="footer">
-            <p-button label="Mint now" styleClass="mybutton"></p-button>
+            
         </ng-template>
     </p-card>
 </div>
+
+<app-footer></app-footer>

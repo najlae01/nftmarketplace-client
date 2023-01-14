@@ -1,12 +1,14 @@
 .form-header {
     font-family: 'Robot';
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 300;
     letter-spacing: 3px;
+    margin-bottom: 0;
+    padding: 15px 0 0 30px;
 }
 
 :host ::ng-deep .mycard.p-card {
-    background: #ded0de;
+    background: #e1bfe1;
     border: none;
     box-shadow: none;
     padding: 20px 40px 10px 30px;
@@ -19,4 +21,94 @@
     flex-direction: column;
     align-items: center;
     margin-top: 3rem;
+}
+
+:host ::ng-deep .p-inputtext {
+    width: 20rem;
+    height: 2.7rem;
+    background-color: #ded0de;
+    color: #2D143B;
+}
+
+
+:host ::ng-deep .p-inputgroup {
+    margin-top: 1.4rem;
+}
+
+:host ::ng-deep .p-inputtext::placeholder {
+    color: #2D143B;
+    opacity: 0.6;
+    font-family: 'Gameplay';
+    font-size: 0.65rem;
+    font-weight: 100;
+}
+
+:host ::ng-deep .p-inputgroup-addon {
+    color: #2D143B;
+    opacity: 0.9;
+    background-color: #ded0de;
+}
+
+:host ::ng-deep .mybutton, .p-button {
+    display: flex;
+    color: #ded0de;
+    margin-top: 1.7rem;
+    background: rgb(123, 1, 236);
+    border: none;
+    transition: background-color 1s;
+    place-content: center;
+    box-shadow: 1px 2px 5px 2px rgb(106, 0, 204);
+}
+
+.mybutton {
+    padding: 7px 20px 7px 20px;
+    font-family: 'Game';
+    font-size: 20px;
+}
+
+:host ::ng-deep .mybutton:hover , .p-button:hover {
+    background: linear-gradient(90deg,
+            rgb(123, 1, 236),
+            transparent) #581D4B;
+}
+
+.description-box{
+    margin-top: 1.4rem;
+}
+
+.imageUpload-box {
+    margin-top: 1.4rem;
+}
+
+.description-box textarea{
+    width: 28rem;
+    background-color: #ded0de;
+    color: #2D143B;
+    padding: 0.5rem;
+}
+
+:host ::ng-deep .p-fileupload .p-fileupload-buttonbar {
+    background: #ded0de;
+    color: #2D143B;
+}
+
+:host ::ng-deep .p-fileupload .p-fileupload-content {
+    background: #ded0de;
+    color: #2D143B;
+}
+
+.description-box textarea::placeholder {
+    color: #2D143B;
+    opacity: 0.6;
+    font-family: 'Gameplay';
+    font-size: 0.65rem;
+    font-weight: 100;
+}
+
+:host ::ng-deep .p-fileupload .p-fileupload-buttonbar .p-button{
+    background: rgb(123, 1, 236);
+    color: #ded0de;
+    font-family: 'Gameplay';
+    font-size: 0.8rem;
+    letter-spacing: 2px;
 }

@@ -17,11 +17,11 @@ export class NftService {
     return this.httpClient.get('http://127.0.0.1:8081/api/nfts/'+id);
   }
 
-  saveNFT(nft: NFT){
+  saveNFT(nft: any){
     return this.httpClient.post('http://127.0.0.1:8081/api/nfts', nft);
   }
 
-  updateNFT(id: any, nft: NFT){
+  updateNFT(id: any, nft: any){
     return this.httpClient.put('http://127.0.0.1:8081/api/nfts/'+id, nft);
   }
 
