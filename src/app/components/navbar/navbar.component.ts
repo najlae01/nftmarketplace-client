@@ -17,7 +17,9 @@ public walletId: string = '';
 public toSearch: any;
 public accounts: any;
 
-constructor(private walletService: WalletService, private messageService: MessageService, private primengConfig: PrimeNGConfig) { 
+constructor(private walletService: WalletService, 
+  private messageService: MessageService,
+   private primengConfig: PrimeNGConfig) { 
   
   this.items = [
         {
@@ -92,7 +94,9 @@ connectToWallet  = () => {
 
     alert() {
         this.messageService.clear();
-        this.messageService.add({key: 'c', sticky: true, severity:'error', summary:'You need to have MetaMask installed in your browser.', detail:'Install it now?'});
+        this.messageService.add({key: 'c', sticky: true, severity:'error', 
+        summary:'You need to have MetaMask installed in your browser.',
+         detail:'Install it now?'});
     }
     onConfirm() {
         window.open("https://metamask.io/download/", "_blank");

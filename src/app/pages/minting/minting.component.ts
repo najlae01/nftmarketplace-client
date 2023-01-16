@@ -59,19 +59,9 @@ export class MintingComponent  implements OnInit {
     }
     console.log("Upload test")
 
-    var tokenId = this.contractService.mintNFT(this.nft, this.uploadedImage.name);
-    
-    var tokenIdString = tokenId?.toString();
+    this.contractService.mintNFT(this.nft, this.uploadedImage.name);
 
-    console.log(tokenIdString);
-    
-    var ownerId: any = this.contractService.getOwner(tokenIdString)
-
-    var ownerIdString = ownerId?.toString()
-
-    console.log(ownerIdString);
-
-    this.nft.ownerId = "0xE382a60d1Cb077FD388417EB944aF3E4c42D08db"
+    this.nft.ownerId = localStorage.getItem("accountId")
 
     this.nftService.saveNFT(this.nft).subscribe(res =>{
       console.log(res);
