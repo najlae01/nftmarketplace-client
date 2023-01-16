@@ -39,15 +39,4 @@ export class WalletService {
       throw new Error("No ethereum object found");
     }
   }
-
-  /*public disconnectWallet = async () => {
-    this.accounts = await this.ethereum.request({
-          method: "eth_requestAccounts",
-          params: [
-            {
-              eth_accounts: {}
-            }
-          ]
-        });
-  }*/
 }

@@ -47,13 +47,6 @@ constructor(private walletService: WalletService, private messageService: Messag
           icon:'pi pi-wallet',
           visible: true
         }
-        /*
-        {
-            label: 'LOGOUT',
-            icon: 'pi pi-power-off',
-            command: () => this.logout(),
-            visible: false
-        }*/
     ];
   }
 connectToWallet  = () => {
@@ -113,12 +106,5 @@ connectToWallet  = () => {
     clear() {
         this.messageService.clear();
     } 
-/*logout(){
-  localStorage.removeItem("accountId");
-  this.walletService.disconnectWallet()
-  this.walletConnected = false;
-  this.items[2].visible = true;
-  this.items[3].visible = false;
-}*/
 
 }

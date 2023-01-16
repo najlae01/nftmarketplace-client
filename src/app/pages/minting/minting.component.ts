@@ -5,6 +5,7 @@ import { NftService } from 'src/app/services/nft.service';
 import { faPalette } from '@fortawesome/free-solid-svg-icons';
 import { MessageService } from 'primeng/api';
 import { NFT } from 'src/app/models/nft';
+import { ContractService } from 'src/app/services/contract.service';
 
 @Component({
   selector: 'app-minting',
@@ -23,7 +24,10 @@ export class MintingComponent  implements OnInit {
   uploadedImage: any = null;
   nft = new NFT()
 
-  constructor(private messageService: MessageService, private nftService: NftService, private formBuilder: FormBuilder) {
+
+  constructor(private messageService: MessageService, 
+    private contractService: ContractService, 
+    private nftService: NftService, private formBuilder: FormBuilder) {
    }
 
   ngOnInit(): void {
@@ -46,13 +50,29 @@ export class MintingComponent  implements OnInit {
             let formdata = new FormData()
             formdata.append("file", file)
             //formdata.append("name", filename)
-            this.nft.imageCover = filename
+            
             console.log(formdata)
                 this.nftService.uploadImage(formdata).subscribe(res =>{
                   console.log(res);
+                  this.nft.imageCover = filename
             })
     }
     console.log("Upload test")
+
+    var tokenId = this.contractService.mintNFT(this.nft, this.uploadedImage.name);
+    
+    var tokenIdString = tokenId?.toString();
+
+    console.log(tokenIdString);
+    
+    var ownerId: any = this.contractService.getOwner(tokenIdString)
+
+    var ownerIdString = ownerId?.toString()
+
+    console.log(ownerIdString);
+
+    this.nft.ownerId = "0xE382a60d1Cb077FD388417EB944aF3E4c42D08db"
+
     this.nftService.saveNFT(this.nft).subscribe(res =>{
       console.log(res);
       this.dt = res;
@@ -61,6 +81,7 @@ export class MintingComponent  implements OnInit {
       }else{
         this.messageService.add({ severity: 'error', summary: 'Error', detail: 'Failed To Upload' });
       }
+
       this.submitted = false;
       this.nft = new NFT()
       this.form.get('name')?.reset();
@@ -88,6 +109,9 @@ export class MintingComponent  implements OnInit {
             this.uploadedImage = fileList[0];
             console.log(fileList[0])  
     }
-        this.messageService.add({ severity: 'info', summary: 'Success', detail: 'Image Uploaded' });
+        this.messageService.add({ severity: 'info', 
+        summary: 'Success', detail: 'Image Uploaded' });
     }
+
+    
 }

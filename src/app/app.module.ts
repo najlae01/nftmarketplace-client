@@ -32,9 +32,6 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { HomeComponent } from './pages/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BannerComponent } from './components/banner/banner.component';
-import { AuthComponent } from './pages/auth/auth.component';
-import { LoginComponent } from './components/login/login.component';
-import { RegisterComponent } from './components/register/register.component';
 import { MintingComponent } from './pages/minting/minting.component';
 import { UserNftsComponent } from './pages/user-nfts/user-nfts.component';
 
@@ -45,9 +42,6 @@ import { UserNftsComponent } from './pages/user-nfts/user-nfts.component';
     HomeComponent,
     FooterComponent,
     BannerComponent,
-    AuthComponent,
-    LoginComponent,
-    RegisterComponent,
     MintingComponent,
     UserNftsComponent
   ],
