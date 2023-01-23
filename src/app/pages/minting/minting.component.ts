@@ -18,7 +18,7 @@ export class MintingComponent  implements OnInit {
   id: any;
   form!: FormGroup;
   files: any;
-  dt: any;
+  dt: any; 
   submitted: any = false;
   paletteIcon = faPalette;
   uploadedImage: any = null;
