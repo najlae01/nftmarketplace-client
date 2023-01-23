@@ -102,6 +102,5 @@ export class MintingComponent  implements OnInit {
         this.messageService.add({ severity: 'info', 
         summary: 'Success', detail: 'Image Uploaded' });
     }
-
     
 }
