@@ -201,8 +201,12 @@
 
 @media screen and (max-width: 960px) {
   :host ::ng-deep .p-menubar-root-list {
-    font-size: 0.8rem !important;
+    font-size: 0.7rem !important;
+    text-wrap: nowrap;
+    min-width: max-content;
+    padding: 0 0.5rem 0 0.5rem;
   }
+
   :host
     ::ng-deep
     .p-menubar
