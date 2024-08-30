@@ -170,9 +170,7 @@ input:focus {
   .info > div {
     font-size: 12px;
   }
-  .container {
-    margin-top: 10rem;
-  }
+
   :host ::ng-deep .p-splitter {
     margin-bottom: 1rem !important;
   }
