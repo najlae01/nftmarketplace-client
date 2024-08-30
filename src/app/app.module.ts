@@ -67,10 +67,9 @@ import { AuthGuard } from "./auth.guard";
     RippleModule,
     InputTextareaModule,
     FileUploadModule,
-
-      TuiRootModule,
-      TuiDialogModule,
-      TuiAlertModule
+    TuiRootModule,
+    TuiDialogModule,
+    TuiAlertModule
 ],
   providers: [{provide: TUI_SANITIZER, useClass: NgDompurifySanitizer}, MessageService, AuthGuard],
   bootstrap: [AppComponent]
