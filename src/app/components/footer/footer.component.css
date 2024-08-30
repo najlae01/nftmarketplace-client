@@ -184,6 +184,9 @@ input:focus {
   .info > div {
     font-size: 10px;
   }
+  .container {
+    margin-top: 17rem;
+  }
 }
 
 @media screen and (max-width: 800px) {
