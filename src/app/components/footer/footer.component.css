@@ -15,7 +15,7 @@
   padding: 0rem 1rem;
   background-color: transparent;
   border: none;
-  margin-bottom: 3rem !important;
+  margin-bottom: 1rem !important;
 }
 
 :host ::ng-deep .p-splitter .p-splitter-gutter {
@@ -185,7 +185,7 @@ input:focus {
     font-size: 10px;
   }
   .container {
-    margin-top: 17rem;
+    margin-top: 18rem;
   }
 }
 
