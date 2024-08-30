@@ -1,52 +1,63 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { 
-height: 100%; 
-background: repeating-linear-gradient(45deg, #2D143B 80%, #581D4B 15%);
-position: relative;
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  background: repeating-linear-gradient(45deg, #2d143b 80%, #581d4b 15%);
+  position: relative;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  scroll-behavior: smooth !important;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  touch-action: auto;
+  -ms-touch-action: auto;
 }
+
 .blur {
-    position: absolute;
-    width: 30rem;
-    height: 24rem;
-    border-radius: 50%;
-    background-color:#8e4b7d;
-    filter: blur(72px);
+  position: absolute;
+  width: 30rem;
+  height: 24rem;
+  border-radius: 50%;
+  background-color: #8e4b7d;
+  filter: blur(72px);
 }
 
 .first {
-    top: 25%;
-    right: 8rem;
+  top: 25%;
+  right: 8rem;
 }
 
 .second {
-    top: 56%;
-    left: -5rem;
-}
-
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
-@font-face {
-    font-family: 'Robot';
-    src: url('../src/assets/fonts/Robot_Font.otf');
+  top: 56%;
+  left: -5rem;
 }
 
 @font-face {
-    font-family: 'Sketcomic';
-    src: url('../src/assets/fonts/Sketcomic.otf');
+  font-family: "Robot";
+  src: url("../src/assets/fonts/Robot_Font.otf");
 }
 
 @font-face {
-    font-family: 'Game';
-    src: url('../src/assets/fonts/GAME_glm.ttf') format("truetype");
+  font-family: "Sketcomic";
+  src: url("../src/assets/fonts/Sketcomic.otf");
 }
 
 @font-face {
-    font-family: 'Gameplay';
-    src: url('../src/assets/fonts/Gameplay.ttf') format("truetype");
+  font-family: "Game";
+  src: url("../src/assets/fonts/GAME_glm.ttf") format("truetype");
 }
 
 @font-face {
-    font-family: 'Game-Over';
-    src: url('../src/assets/fonts/game_over.ttf') format("truetype");
+  font-family: "Gameplay";
+  src: url("../src/assets/fonts/Gameplay.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Game-Over";
+  src: url("../src/assets/fonts/game_over.ttf") format("truetype");
 }

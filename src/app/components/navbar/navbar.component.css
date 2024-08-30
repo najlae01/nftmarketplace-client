@@ -1,6 +1,13 @@
-:host ::ng-deep .dark-panel.p-toolbar {
+:host ::ng-deep .dark-panel {
   background: transparent;
   border: none;
+}
+
+:host ::ng-deep .dark-panel.p-toolbar {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  padding: 1rem 2rem;
 }
 
 :host ::ng-deep .dark-menu.p-menubar {
@@ -13,7 +20,7 @@
 }
 
 .p-toolbar-group-start {
-  margin-left: 2rem;
+  padding-left: 1rem;
 }
 
 .lozenge {
@@ -23,12 +30,11 @@
   border-radius: 40%;
   background: linear-gradient(135deg, #461944 20%, #2d143b);
   text-align: end;
-  padding-right: 8px;
-  margin-right: 1px;
   font-family: Sketcomic;
   font-size: 40px;
   font-weight: 400;
   color: #ded0de;
+  padding-right: 8px;
 }
 
 .rest-of-label {
@@ -118,4 +124,10 @@
   > .p-grid.p-fluid
   > div {
   width: 10rem !important;
+}
+
+@media screen and (max-width: 670px) {
+  .p-toolbar-group-start {
+    padding-left: 0.5rem;
+  }
 }
