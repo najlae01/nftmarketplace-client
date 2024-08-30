@@ -1,12 +1,90 @@
+<p-toast
+  position="bottom-center"
+  key="c"
+  (onClose)="onReject()"
+  [baseZIndex]="5000"
+>
+  <ng-template let-message pTemplate="message">
+    <div class="p-flex p-flex-column" style="flex: 1">
+      <div class="p-text-center">
+        <i class="pi pi-exclamation-triangle" style="font-size: 3rem"></i>
+        <h4>{{ message.summary }}</h4>
+        <p>{{ message.detail }}</p>
+      </div>
+      <div class="p-grid p-fluid">
+        <div class="p-col-6">
+          <button
+            type="button"
+            pButton
+            (click)="onConfirm()"
+            label="Yes"
+            class="p-button-success"
+          ></button>
+        </div>
+        <div class="p-col-6">
+          <button
+            type="button"
+            pButton
+            (click)="onReject()"
+            label="No"
+            class="p-button-secondary"
+          ></button>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+</p-toast>
+
+<p-toast
+  position="bottom-center"
+  key="n"
+  (onClose)="onRejectNotInstalled()"
+  [baseZIndex]="5000"
+>
+  <ng-template let-message pTemplate="message">
+    <div class="p-flex p-flex-column" style="flex: 1">
+      <div class="p-text-center">
+        <i class="pi pi-exclamation-triangle" style="font-size: 3rem"></i>
+        <h4>{{ message.summary }}</h4>
+        <p>{{ message.detail }}</p>
+      </div>
+      <div class="p-grid p-fluid">
+        <div class="p-col-6">
+          <button
+            type="button"
+            pButton
+            (click)="onConfirmNotInstalled()"
+            label="Yes"
+            class="p-button-success"
+          ></button>
+        </div>
+        <div class="p-col-6">
+          <button
+            type="button"
+            pButton
+            (click)="onRejectNotInstalled()"
+            label="No"
+            class="p-button-secondary"
+          ></button>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+</p-toast>
+
 <p-card styleClass="mycard">
-    <ng-template pTemplate="header" >
-        <div class="banner-header">Discover, and collect</div>
-        <div class="banner-header">extraordinary</div>
-        <div class="banner-header"><span>monster</span> NFTs</div>
-    </ng-template>
-    <div class="banner-middle">Marketplace for monster character</div>
-    <div class="banner-middle">collections non fungible token</div>
-    <ng-template pTemplate="footer">
-        <p-button label="Collect now" styleClass="mybutton"></p-button>
-    </ng-template>
+  <ng-template pTemplate="header">
+    <div class="banner-header">Discover, and collect</div>
+    <div class="banner-header">extraordinary</div>
+    <div class="banner-header"><span>monster</span> NFTs</div>
+  </ng-template>
+  <div class="banner-middle">Marketplace for monster character</div>
+  <div class="banner-middle">collections non fungible token</div>
+  <ng-template pTemplate="footer">
+    <p-button
+      label="Upload now"
+      styleClass="mybutton"
+      (click)="handleUpload()"
+    ></p-button>
+  </ng-template>
 </p-card>

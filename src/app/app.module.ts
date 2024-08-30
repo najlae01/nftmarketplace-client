@@ -11,8 +11,6 @@ import { ToastrModule } from 'ngx-toastr';
 
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
-//import {MatToolbarModule} from '@angular/material/toolbar';
-//import {MatIconModule} from '@angular/material/icon';
 import {ToolbarModule} from 'primeng/toolbar';
 import {ButtonModule} from 'primeng/button';
 import {SplitButtonModule} from 'primeng/splitbutton';
@@ -34,6 +32,8 @@ import { FooterComponent } from './components/footer/footer.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { MintingComponent } from './pages/minting/minting.component';
 import { UserNftsComponent } from './pages/user-nfts/user-nfts.component';
+import { MessageService } from "primeng/api";
+import { AuthGuard } from "./auth.guard";
 
 @NgModule({
   declarations: [
@@ -55,8 +55,6 @@ import { UserNftsComponent } from './pages/user-nfts/user-nfts.component';
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
     FontAwesomeModule,
-    //MatToolbarModule,
-    //MatIconModule,
     ToolbarModule,
     ButtonModule,
     SplitButtonModule,
@@ -74,7 +72,7 @@ import { UserNftsComponent } from './pages/user-nfts/user-nfts.component';
       TuiDialogModule,
       TuiAlertModule
 ],
-  providers: [{provide: TUI_SANITIZER, useClass: NgDompurifySanitizer}],
+  providers: [{provide: TUI_SANITIZER, useClass: NgDompurifySanitizer}, MessageService, AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
