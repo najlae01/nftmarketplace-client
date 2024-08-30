@@ -1,121 +1,187 @@
 .form-header {
-    font-family: 'Robot';
-    font-size: 25px;
-    font-weight: 300;
-    letter-spacing: 3px;
-    margin-bottom: 0;
-    padding: 15px 0 0 30px;
+  font-family: "Robot";
+  font-size: 25px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  margin-bottom: 0;
+  padding: 15px 0 0 30px;
 }
 
 :host ::ng-deep .mycard.p-card {
-    background: #e1bfe1;
-    border: none;
-    box-shadow: none;
-    padding: 20px 40px 10px 30px;
-    color: #2D143B;
-    border-radius: 15px;
+  background: #e1bfe1;
+  border: none;
+  box-shadow: none;
+  padding: 20px 40px 10px 30px;
+  color: #2d143b;
+  border-radius: 15px;
 }
 
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 3rem;
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
 }
 
 :host ::ng-deep .p-inputtext {
-    width: 20rem;
-    height: 2.7rem;
-    background-color: #ded0de;
-    color: #2D143B;
+  width: 20rem;
+  height: 2.7rem;
+  background-color: #ded0de;
+  color: #2d143b;
 }
 
-
 :host ::ng-deep .p-inputgroup {
-    margin-top: 1.4rem;
+  margin-top: 1.4rem;
 }
 
 :host ::ng-deep .p-inputtext::placeholder {
-    color: #2D143B;
-    opacity: 0.6;
-    font-family: 'Gameplay';
-    font-size: 0.65rem;
-    font-weight: 100;
+  color: #2d143b;
+  opacity: 0.6;
+  font-family: "Gameplay";
+  font-size: 0.65rem;
+  font-weight: 100;
 }
 
 :host ::ng-deep .p-inputgroup-addon {
-    color: #2D143B;
-    opacity: 0.9;
-    background-color: #ded0de;
+  color: #2d143b;
+  opacity: 0.9;
+  background-color: #ded0de;
 }
 
-:host ::ng-deep .mybutton, .p-button {
-    display: flex;
-    color: #ded0de;
-    margin-top: 1.7rem;
-    background: rgb(123, 1, 236);
-    border: none;
-    transition: background-color 1s;
-    place-content: center;
-    box-shadow: 1px 2px 5px 2px rgb(106, 0, 204);
+:host ::ng-deep .mybutton,
+.p-button {
+  display: flex;
+  color: #ded0de;
+  margin-top: 1.7rem;
+  background: rgb(123, 1, 236);
+  border: none;
+  transition: background-color 1s;
+  place-content: center;
+  box-shadow: 1px 2px 5px 2px rgb(106, 0, 204);
 }
 
 .mybutton {
-    padding: 7px 20px 7px 20px;
-    font-family: 'Game';
-    font-size: 20px;
+  padding: 7px 20px 7px 20px;
+  font-family: "Game";
+  font-size: 20px;
 }
 
-:host ::ng-deep .mybutton:hover , .p-button:hover {
-    background: linear-gradient(90deg,
-            rgb(123, 1, 236),
-            transparent) #581D4B;
+:host ::ng-deep .mybutton:hover,
+.p-button:hover {
+  background: linear-gradient(90deg, rgb(123, 1, 236), transparent) #581d4b;
 }
 
-.description-box{
-    margin-top: 1.4rem;
+.description-box {
+  margin-top: 1.4rem;
 }
 
 .imageUpload-box {
-    margin-top: 1.4rem;
+  margin-top: 1.4rem;
 }
 
-.imageUpload-box input{
-    width: 28rem;
-    background-color: #ded0de;
-    color: #2D143B;
-    padding: 0.5rem;
+.imageUpload-box input {
+  width: 28rem;
+  color: #2d143b;
+  opacity: 0.8;
+  font-family: "Gameplay";
+  font-size: 0.65rem;
+  font-weight: 100;
 }
 
-.description-box textarea{
-    width: 28rem;
-    background-color: #ded0de;
-    color: #2D143B;
-    padding: 0.5rem;
+.description-box textarea {
+  width: 28rem;
+  background-color: #ded0de;
+  color: #2d143b;
+  padding: 0.5rem;
 }
 
 :host ::ng-deep .p-fileupload .p-fileupload-buttonbar {
-    background: #ded0de;
-    color: #2D143B;
+  background: #ded0de;
+  color: #2d143b;
 }
 
 :host ::ng-deep .p-fileupload .p-fileupload-content {
-    background: #ded0de;
-    color: #2D143B;
+  background: #ded0de;
+  color: #2d143b;
 }
 
 .description-box textarea::placeholder {
-    color: #2D143B;
-    opacity: 0.6;
-    font-family: 'Gameplay';
-    font-size: 0.65rem;
-    font-weight: 100;
+  color: #2d143b;
+  opacity: 0.6;
+  font-family: "Gameplay";
+  font-size: 0.65rem;
+  font-weight: 100;
 }
 
-:host ::ng-deep .p-fileupload .p-fileupload-buttonbar .p-button{
-    background: rgb(123, 1, 236);
-    color: #ded0de;
-    font-family: 'Gameplay';
-    font-size: 0.8rem;
-    letter-spacing: 2px;
+:host ::ng-deep .p-fileupload .p-fileupload-buttonbar .p-button {
+  background: rgb(123, 1, 236);
+  color: #ded0de;
+  font-family: "Gameplay";
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 800px) {
+  :host ::ng-deep .mycard.p-card {
+    padding: 35px 20px 7px 20px;
+  }
+  :host ::ng-deep .mycard.p-card .p-card-content {
+    padding-top: 0rem;
+  }
+  .form-header {
+    letter-spacing: 2.5px;
+    padding: 0 0 0 25px;
+  }
+
+  .imageUpload-box input {
+    width: 20rem;
+  }
+
+  .description-box textarea {
+    width: 20rem;
+  }
+
+  :host ::ng-deep .p-inputgroup {
+    width: 20rem;
+  }
+  :host ::ng-deep .p-fileupload .p-fileupload-buttonbar .p-button {
+    font-size: 0.7rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  :host ::ng-deep .mycard.p-card {
+    padding: 15px 20px 7px 20px;
+  }
+
+  .form-header {
+    font-size: 20px;
+    padding: 15px 0 0 30px;
+  }
+  .imageUpload-box input {
+    width: 15rem;
+  }
+
+  .description-box textarea {
+    width: 15rem;
+  }
+
+  :host ::ng-deep .p-inputgroup {
+    width: 15rem;
+  }
+
+  :host ::ng-deep .p-inputtext::placeholder {
+    font-size: 0.55rem;
+  }
+
+  .description-box textarea::placeholder {
+    font-size: 0.55rem;
+  }
+
+  .imageUpload-box input {
+    font-size: 0.55rem;
+  }
+  :host ::ng-deep .p-fileupload .p-fileupload-buttonbar .p-button {
+    font-size: 0.55rem;
+  }
 }

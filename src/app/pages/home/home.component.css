@@ -1,4 +1,14 @@
-.banner{
-    margin-left: 100px;
-    margin-top: 150px;
+.banner {
+  margin-left: 100px;
+  margin-top: 150px;
+}
+
+@media screen and (max-width: 670px) {
+  .banner {
+    margin-left: 3rem;
+    margin-top: 100px;
+  }
+}
+
+@media screen and (max-width: 525px) {
 }

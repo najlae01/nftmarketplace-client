@@ -126,8 +126,89 @@
   width: 10rem !important;
 }
 
+:host ::ng-deep .p-menubar-root-list {
+  background: transparent;
+  border-color: #ded0de;
+}
+
 @media screen and (max-width: 670px) {
   .p-toolbar-group-start {
     padding-left: 0.5rem;
+  }
+
+  :host
+    ::ng-deep
+    .p-menubar
+    .p-menubar-root-list
+    > .p-menuitem
+    > .p-menuitem-link
+    .p-menuitem-icon {
+    font-size: 1.2rem !important;
+  }
+
+  :host ::ng-deep .p-inputtext {
+    width: 14rem;
+    height: 2.7rem;
+  }
+
+  :host
+    ::ng-deep
+    .p-toast
+    .p-toast-message
+    .p-toast-message-content
+    > .p-flex.p-flex-column
+    > .p-grid.p-fluid
+    > div {
+    width: 10rem !important;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .lozenge {
+    height: 40px;
+    width: 40px;
+    line-height: 30px;
+    font-size: 25px;
+    font-weight: 400;
+  }
+
+  .rest-of-label {
+    font-size: 20px;
+  }
+
+  :host ::ng-deep .p-inputtext {
+    width: 10rem;
+    height: 2.5rem;
+  }
+
+  :host
+    ::ng-deep
+    .p-toast
+    .p-toast-message
+    .p-toast-message-content
+    > .p-flex.p-flex-column
+    > .p-grid.p-fluid
+    > div {
+    width: 7.5rem !important;
+  }
+}
+
+@media screen and (max-width: 410px) {
+  :host ::ng-deep .dark-panel.p-toolbar {
+    padding: 1rem 1rem 0rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  :host ::ng-deep .p-menubar-root-list {
+    font-size: 0.8rem !important;
+  }
+  :host
+    ::ng-deep
+    .p-menubar
+    .p-menubar-root-list
+    > .p-menuitem
+    > .p-menuitem-link {
+    border-bottom: #ded0de;
   }
 }

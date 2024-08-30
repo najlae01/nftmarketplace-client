@@ -1,158 +1,196 @@
 .container {
-    margin-top: 15rem;
+  margin-top: 15rem;
 }
 
-:host ::ng-deep .p-splitter-panel-nested{
-    margin: 0.5rem 0rem 0.5rem 0;
+:host ::ng-deep .p-splitter-panel-nested {
+  margin: 0.5rem 0rem 0.5rem 0;
+  margin-right: 2rem;
 }
+
 :host ::ng-deep .p-splitter {
-    background-color: transparent;
-    border: none;
-    padding: 0;
-    margin-left: 4rem;
-    margin-right: 4rem;
-    margin-bottom: 3rem !important;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0rem 1rem;
+  background-color: transparent;
+  border: none;
+  margin-bottom: 3rem !important;
 }
 
 :host ::ng-deep .p-splitter .p-splitter-gutter {
-    background: transparent;
+  background: transparent;
 }
 
 :host ::ng-deep .p-splitter .p-splitter-gutter .p-splitter-gutter-handle {
-    background: transparent;
+  background: transparent;
 }
 
 .header {
-    font-family: 'Robot';
-    font-size: 1.1rem;
-    letter-spacing: 3px;
-    color: #ded0de;
-    margin-bottom: 1rem;
+  font-family: "Robot";
+  font-size: 1.1rem;
+  letter-spacing: 3px;
+  color: #ded0de;
+  margin-bottom: 1rem;
 }
-.info > div{
-    margin-bottom: 0.6rem;
-    font-family: "Open Sans", sans-serif;
-    font-size: 14px;
-    color: #ded0de;
-    opacity: 0.9;
-    max-width: 400px;
+.info > div {
+  margin-bottom: 0.6rem;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #ded0de;
+  opacity: 0.9;
+  max-width: 400px;
 }
 
 a {
-    text-decoration: none;
-    color: #ded0de;
+  text-decoration: none;
+  color: #ded0de;
 }
 
-.info>div i{
-    margin-right: 8px;
-    font-size: 14px;
-    opacity: 0.9;
+.info > div i {
+  margin-right: 8px;
+  font-size: 14px;
+  opacity: 0.9;
 }
 
 :host ::ng-deep .p-inputtext::placeholder {
-    color: #2D143B;
-    opacity: 0.6;
-    font-family: 'Gameplay';
-    font-size: 0.65rem;
-    font-weight: 100;
+  color: #2d143b;
+  opacity: 0.6;
+  font-family: "Gameplay";
+  font-size: 0.65rem;
+  font-weight: 100;
 }
 
 :host ::ng-deep .p-inputgroup-addon {
-    color: #2D143B;
-    opacity: 0.9;
-    background-color: #ded0de;
+  color: #2d143b;
+  opacity: 0.9;
+  background-color: #ded0de;
 }
 
 :host ::ng-deep .p-button {
-    background: rgb(123, 1, 236);
-    outline: none;
-    box-shadow: none;
-    border: none;
-    color: #ded0de;
-    font-size: 0.7rem;
+  background: rgb(123, 1, 236);
+  outline: none;
+  box-shadow: none;
+  border: none;
+  color: #ded0de;
+  font-size: 0.7rem;
 }
 
 :host ::ng-deep .p-button {
-    background: rgb(123, 1, 236);
-    height: 2rem;
-    outline: none;
-    box-shadow: none;
-    border: none;
-    color: #ded0de;
-    font-size: 0.7rem;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+  background: rgb(123, 1, 236);
+  height: 2rem;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  color: #ded0de;
+  font-size: 0.7rem;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 :host ::ng-deep .p-button:hover {
-    background: linear-gradient(90deg,
-            rgb(123, 1, 236),
-            transparent) #8e4b7d;
-    color: #ded0de;
-    outline: rgb(106, 0, 204);
-    border: rgb(106, 0, 204);
+  background: linear-gradient(90deg, rgb(123, 1, 236), transparent) #8e4b7d;
+  color: #ded0de;
+  outline: rgb(106, 0, 204);
+  border: rgb(106, 0, 204);
 }
 
-input{ 
-    width: 10rem;
-    height: 2rem;
-    outline: none;
-    box-shadow: none;
-    border: none;
-    background-color: #ded0de;
-    color: #2D143B;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    padding: 12px;
+input {
+  width: 10rem;
+  height: 2rem;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  background-color: #ded0de;
+  color: #2d143b;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding: 12px;
 }
 
 input::placeholder {
-    color: #2D143B;
-    opacity: 0.6;
-    font-family: 'Gameplay';
-    font-size: 0.55rem;
-    font-weight: 100;
-    padding: 7px;
+  color: #2d143b;
+  opacity: 0.6;
+  font-family: "Gameplay";
+  font-size: 0.55rem;
+  font-weight: 100;
+  padding: 7px;
 }
 
 input:focus {
-    box-shadow: 0.5px 0.5px 2px 1px rgb(106, 0, 204);
-    outline: rgb(106, 0, 204);
-    border: rgb(106, 0, 204);
+  box-shadow: 0.5px 0.5px 2px 1px rgb(106, 0, 204);
+  outline: rgb(106, 0, 204);
+  border: rgb(106, 0, 204);
 }
 
-.social-media{
-    margin-top: 20px !important;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.subscribe form {
+  display: flex;
 }
 
-
-.icon i{
-    padding: 8px;
-    border-radius: 40%;
-    color: rgb(133, 9, 250);
-    font-size: 20px !important;
+.social-media {
+  margin-top: 20px !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
+.icon i {
+  padding: 8px;
+  border-radius: 40%;
+  color: rgb(133, 9, 250);
+  font-size: 20px !important;
+}
 
 .icon i:hover {
-    color: #f6f2f6;
-    background: rgb(133, 9, 250);
+  color: #f6f2f6;
+  background: rgb(133, 9, 250);
 }
 
-.copyright{
-    flex: 0 0 100%;
-    text-align: center;
-    font-family: "Open Sans", sans-serif;
-    font-size: 14px;
-    color: #ded0de;
-    opacity: 0.9;
-    padding: 0.7rem 2rem 0.7rem 2rem;
-    background-color: #2D143B;
+.copyright {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  color: #ded0de;
+  opacity: 0.9;
+  padding: 0.7rem 2rem 0.7rem 2rem;
+  background-color: #2d143b;
+  margin: 0rem 3rem 2rem 3rem;
 }
 
-.copyright span{
-    color: rgb(133, 9, 250);
+.copyright span {
+  color: rgb(133, 9, 250);
+}
+
+@media screen and (max-width: 670px) {
+  .header {
+    font-size: 1rem;
+    letter-spacing: 2.2px;
+    margin-bottom: 0.6rem;
+  }
+  .info > div {
+    font-size: 12px;
+  }
+  .container {
+    margin-top: 10rem;
+  }
+  :host ::ng-deep .p-splitter {
+    margin-bottom: 1rem !important;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .header {
+    font-size: 0.85rem;
+    letter-spacing: 2px;
+  }
+  .info > div {
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  :host ::ng-deep .p-splitter {
+    display: block;
+    margin-left: 0.5rem;
+  }
 }
